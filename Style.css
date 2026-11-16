@@ -1,0 +1,77 @@
+:root {
+  --tinta: #14213d;
+  --papel: #f3f5f7;
+  --destaque: #b89e0e;
+  --destaque-escuro: #0d4947;
+  --suave: #dfe6ec;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--tinta);
+  background: var(--papel);
+  line-height: 1.6;
+}
+
+h1, h2, h3, .navbar-brand { font-family: "Sora", sans-serif; }
+
+/* Menu */
+.navbar { background: rgba(243, 245, 247, 0.95); backdrop-filter: blur(6px); border-bottom: 1px solid var(--suave); }
+.navbar-brand { font-weight: 700; color: var(--tinta); }
+.nav-link { color: var(--tinta); font-weight: 600; }
+.nav-link:hover, .nav-link.active { color: var(--destaque); }
+
+/* Perfil */
+.hero { padding: 9rem 0 5rem; }
+.hero .nome { color: var(--destaque); }
+.foto {
+  display: block; width: 260px; height: 260px; margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Botões */
+.btn-destaque { background: var(--destaque); color: #fff; border: 0; transition: background .2s, transform .2s; }
+.btn-destaque:hover { background: var(--destaque-escuro); color: #fff; transform: translateY(-2px); }
+.btn-outline-contorno { border: 2px solid var(--tinta); color: var(--tinta); }
+.btn-outline-contorno:hover { background: var(--tinta); color: #fff; }
+
+/* Seções */
+.secao { padding: 4.5rem 0; }
+.secao:nth-of-type(even) { background: #fff; }
+.texto-curto { max-width: 60ch; }
+h2 { margin-bottom: 1.5rem; }
+
+/* Habilidades: barras que enchem ao rolar */
+.skill { margin-bottom: 1.25rem; }
+.progress { height: 12px; background: var(--suave); }
+.progress-bar {
+  width: 0;
+  background: var(--destaque);
+  transition: width 1.4s cubic-bezier(.2, .8, .2, 1);
+}
+
+/* Projetos */
+.filtros { display: flex; gap: .5rem; flex-wrap: wrap; }
+.btn-filtro { border: 2px solid var(--tinta); color: var(--tinta); background: transparent; }
+.btn-filtro.ativo, .btn-filtro:hover { background: var(--tinta); color: #fff; }
+.card { border: 1px solid var(--suave); transition: transform .25s, box-shadow .25s; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(20, 33, 61, .15); }
+.card-capa { display: block; width: 100%; height: 140px; object-fit: cover; border-radius: .375rem .375rem 0 0; }
+.capa-1 { background: #14213d; }
+.capa-2 { background: #63cac7; }
+.capa-3 { background: #5b6b8a; }
+.projeto.oculto { display: none; }
+
+/* Contato e rodapé */
+.form-control:focus { border-color: var(--destaque); box-shadow: 0 0 0 .2rem rgba(31, 138, 134, .25); }
+.rodape { padding: 2rem 0; background: var(--tinta); color: #fff; }
+
+a:focus-visible, button:focus-visible { outline: 3px solid var(--destaque); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .progress-bar, .card, .btn-destaque { transition: none; }
+}

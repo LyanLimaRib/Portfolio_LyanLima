@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | LYAN L. RIBEIRO</title>
+  <meta name="description" content="Portfólio pessoal com perfil, habilidades, projetos e contato.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="80" tabindex="0">
+  <nav class="navbar navbar-expand-md fixed-top" id="menu">
+    <div class="container">
+      <a class="navbar-brand" href="#perfil">LYAN L. RIBEIRO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- PERFIL -->
+    <section id="perfil" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-7">
+            <h1 class="display-4">Olá, eu sou <span class="nome">LYAN RIBEIRO</span>.</h1>
+            <p class="lead">Estudante de Desenvolvimento de Sistemas, transformo ideias em soluções digitais e orquestramento de Inteligência Artificial.</p>
+            <a href="#projetos" class="btn btn-destaque btn-lg me-2">Ver projetos</a>
+            <a href="#contato" class="btn btn-outline-contorno btn-lg">Falar comigo</a>
+          </div>
+          <div class="col-md-5 text-center">
+            <img class="foto" src="https://avatars.githubusercontent.com/u/251007760?v=4" alt="Foto de perfil de Lyan Ribeiro">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="secao">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <p class="texto-curto">Meu nível de proficiência em cada tecnologia.</p>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="skill" data-valor="80"><div class="d-flex justify-content-between"><span>HTML</span><span class="pct">0%</span></div><div class="progress" role="progressbar" aria-label="HTML"><div class="progress-bar"></div></div></div>
+            <div class="skill" data-valor="80"><div class="d-flex justify-content-between"><span>CSS</span><span class="pct">0%</span></div><div class="progress" role="progressbar" aria-label="CSS"><div class="progress-bar"></div></div></div>
+            <div class="skill" data-valor="75"><div class="d-flex justify-content-between"><span>Python</span><span class="pct">0%</span></div><div class="progress" role="progressbar" aria-label="Python"><div class="progress-bar"></div></div></div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill" data-valor="65"><div class="d-flex justify-content-between"><span>JavaScript</span><span class="pct">0%</span></div><div class="progress" role="progressbar" aria-label="JavaScript"><div class="progress-bar"></div></div></div>
+            <div class="skill" data-valor="70"><div class="d-flex justify-content-between"><span>Git e GitHub</span><span class="pct">0%</span></div><div class="progress" role="progressbar" aria-label="Git e GitHub"><div class="progress-bar"></div></div></div>
+            <div class="skill" data-valor="60"><div class="d-flex justify-content-between"><span>Banco de dados (SQL)</span><span class="pct">0%</span></div><div class="progress" role="progressbar" aria-label="SQL"><div class="progress-bar"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="filtros mb-4" role="group" aria-label="Filtrar projetos">
+          <button class="btn btn-filtro ativo" data-filtro="todos">Todos</button>
+          <button class="btn btn-filtro" data-filtro="web">Web</button>
+          <button class="btn btn-filtro" data-filtro="dados">Dados</button>
+        </div>
+        <div class="row g-4" id="lista-projetos">
+          <div class="col-md-4 projeto" data-categoria="web">
+            <article class="card h-100">
+              <img class="card-capa capa-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOASHQOWCChdgNHi-HMek-YzeSNhF0d8ZEyNkoBrOQQ&s=10" alt="Capa do Meu Portal de Entretenimento">
+              <div class="card-body">
+                <h3 class="h5">Meu Portal de Entretenimento</h3>
+                <p>Página HTML com seções de filmes, música e games, cada uma com imagens.</p>
+                <a href="https://github.com/LyanLimaRib/Academic_Projects/tree/main/Portal_Web" class="btn btn-sm btn-destaque">Ver projeto</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 projeto" data-categoria="web">
+            <article class="card h-100">
+              <img class="card-capa capa-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21zD8vcZz6RaixEV_fYXJfouucxbWy7pFZdQ1VhHWfA&s=10" alt="Capa da Galeria de imagens">
+              <div class="card-body">
+                <h3 class="h5">Galeria de imagens</h3>
+                <p>Galeria com 5 imagens clicáveis feita com HTML, CSS e JavaScript.</p>
+                <a href="https://github.com/LyanLimaRib/Academic_Projects/tree/main/Web_Site" class="btn btn-sm btn-destaque">Ver projeto</a>
+              </div>    
+            </article>
+          </div>
+          <div class="col-md-4 projeto" data-categoria="dados">
+            <article class="card h-100">
+              <img class="card-capa capa-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdTyevZkizaAmLXuZI_eOxsLkt2QXDfdPxg43491nFQzXo2BK8v1GwdrO&s=10" alt="Capa do projeto Cálculo de consumo">
+              <div class="card-body">
+                <h3 class="h5">Cálculo de consumo</h3>
+                <p>Programa para cálculo de consumo de energia.</p>
+                <a href="https://github.com/LyanLimaRib/Academic_Projects/tree/main/Consumo_Energia" class="btn btn-sm btn-destaque">Ver projeto</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="row g-5">
+          <div class="col-md-5">
+            <p>Vamos conversar sobre estágios, projetos ou dúvidas.</p>
+            <ul class="list-unstyled">
+              <li>E-mail: <a href="lyanaparecido.rib000@gmail.com">Email_LyanRibeiro</a></li>
+              <li>GitHub: <a href="https://github.com/LyanLimaRib" target="_blank" rel="noopener">github_LyanLimaRib</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/lyan-lima-ribeiro" target="_blank" rel="noopener">Linkedin_LyanRibeiro</a></li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <form id="form-contato" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+                <div class="invalid-feedback">Informe seu nome.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Informe um e-mail válido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                <div class="invalid-feedback">Escreva sua mensagem.</div>
+              </div>
+              <button type="submit" class="btn btn-destaque">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape text-center">
+    <small>&copy; 2026 LYAN L. RIBEIRO - Feito com HTML, CSS, Bootstrap e JavaScript.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
